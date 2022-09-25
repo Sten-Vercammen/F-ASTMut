@@ -1,0 +1,1 @@
+(time ./miniexample.sh) > miniexample.log 2>&1 &

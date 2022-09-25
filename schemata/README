@@ -1,0 +1,15 @@
+To run the schemata technique, the tool should be build with the schemata option.
+Running the compiled program instruments the codebase.
+We first need to compile the instrumented program, and then rub the schemata script
+
+# step 1: compile instrumented program
+cd miniexample/build
+cmake --build .
+
+
+#step 2: run schemata script
+./schemata.sh <csvFile> <buildFolder> "testCMD" timeoutSeconds
+
+An example is provided in miniexample.sh and others.
+
+You need to time the execution yourself, this can be done as presented in the timecmd.txt file.
