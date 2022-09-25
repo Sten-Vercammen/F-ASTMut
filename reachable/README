@@ -1,0 +1,16 @@
+In order to extract which mutants are reachable by which test case, we need to run the instrumented code first.
+For this we need an sql database to be in place!!!
+
+# Step 0: have an SQL database in place
+
+# Step 1: build the project (after running the reachable option of the tool)
+
+# step 2: run the reachable.sh script
+This setups the database, runs the project for each test, and stores which mutants are reachable per test.
+Examples are included in the repository
+
+# step 3: run the schemata_quick script
+For each mutant, this then runs only those tests that reach the mutant
+
+
+Timing should be done external, this can be done with the timecmd as provided in the schemata folder. 
