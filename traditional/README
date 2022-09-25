@@ -1,0 +1,17 @@
+To run a traditional mutation analysis we need to individually insert the mutants from the generated CSV file into the project, build the project, execute the mutant, reset the project files, insert another mutant and so on.
+
+This is done using the tradMutate script and the accompanying main file.
+
+# Step 1 build the main file:
+make all
+
+# step 2: run the tradMutate script:
+
+./tradMutate.sh <csvFileLoc> "./a.out" <buildFolder> "buildCMD" "testCMD" timeoutSeconds
+
+An example is provided in miniexample_trad.sh and others.
+
+
+# step 3:
+The tool outputs which mutants fails and which succeeded in the MutantProgress file.
+The tool also outputs the cumulative build time and cumulative execution time of all mutants.
