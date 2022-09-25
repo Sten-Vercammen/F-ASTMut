@@ -1,12 +1,17 @@
 [
 {
-  "directory": "/opt/minitest/build",
-  "command": "/usr/bin/c++   -I/opt/minitest/include    -o CMakeFiles/test.dir/src/main.cpp.o -c /opt/minitest/src/main.cpp",
-  "file": "/opt/minitest/src/main.cpp"
+  "directory": "/opt/miniexample/build/src",
+  "command": "/usr/bin/c++  -I/opt/miniexample/include  -o CMakeFiles/Mini.dir/mini.cpp.o -c /opt/miniexample/src/mini.cpp",
+  "file": "/opt/miniexample/src/mini.cpp"
 },
 {
-  "directory": "/opt/minitest/build",
-  "command": "/usr/bin/c++   -I/opt/minitest/include    -o CMakeFiles/test.dir/src/mini.cpp.o -c /opt/minitest/src/mini.cpp",
-  "file": "/opt/minitest/src/mini.cpp"
+  "directory": "/opt/miniexample/build/src",
+  "command": "/usr/bin/c++  -I/opt/miniexample/include  -o CMakeFiles/mini.dir/main.cpp.o -c /opt/miniexample/src/main.cpp",
+  "file": "/opt/miniexample/src/main.cpp"
+},
+{
+  "directory": "/opt/miniexample/build/test",
+  "command": "/usr/bin/c++  -I/opt/miniexample/include  -o CMakeFiles/Test.dir/main.cpp.o -c /opt/miniexample/test/main.cpp",
+  "file": "/opt/miniexample/test/main.cpp"
 }
 ]

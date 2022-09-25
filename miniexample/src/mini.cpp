@@ -1,4 +1,4 @@
-#include "mini.h"
+#include <mini.h>
 
 
 Mini::Mini() {};

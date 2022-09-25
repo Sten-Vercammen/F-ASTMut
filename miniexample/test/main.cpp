@@ -1,5 +1,6 @@
-#include "mini.h"
+#include <mini.h>
 
 int main() {
-	return f();
+        Maxi m;
+        return (m.f(2) == 12 ? 0: -1);
 }

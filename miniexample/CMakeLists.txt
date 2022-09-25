@@ -2,8 +2,11 @@ cmake_minimum_required(VERSION 2.8.9)
 project(mini)
 
 include_directories(include)
+add_subdirectory(include)
 
-# magically find all cpp files in src
-file(GLOB SOURCES "src/*.cpp")
+add_subdirectory(src)
 
-add_executable(test ${SOURCES})
+enable_testing()
+
+add_subdirectory(test)
+
