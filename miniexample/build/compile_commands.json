@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/opt/minitest/build",
+  "command": "/usr/bin/c++   -I/opt/minitest/include    -o CMakeFiles/test.dir/src/main.cpp.o -c /opt/minitest/src/main.cpp",
+  "file": "/opt/minitest/src/main.cpp"
+},
+{
+  "directory": "/opt/minitest/build",
+  "command": "/usr/bin/c++   -I/opt/minitest/include    -o CMakeFiles/test.dir/src/mini.cpp.o -c /opt/minitest/src/mini.cpp",
+  "file": "/opt/minitest/src/mini.cpp"
+}
+]
