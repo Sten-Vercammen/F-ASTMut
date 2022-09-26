@@ -1,0 +1,31 @@
+# there are different configurations for the tool, these can be configured by changing the respectable flags inside the main file
+1: export mutants
+2: export reachable mutants
+3: schemata
+4: split stream
+
+
+# to build the tool, set the desired flags, build it, and rename to your option, e.g. export, the execute your option, ideally using a script
+
+make all
+mv rewriter.o export.o
+./export.o -p <buildPath> [list of flies to mutate]
+
+You can obtain the list of all files as described int the global README example, or specify files of interest.
+An example is provided in export_miniexample.sh and others 
+
+
+# the export option exports the mutants to a csv file.
+This is used the executed the mutants in a traditional manner, see README of traditional
+
+# the export reachable mutants instruments to code, to enable the extraction of the reachable mutants
+See README of reachable
+
+# the schemata option instruments the code to enable mutant schemata
+See README of schemata
+
+
+# the split stream option instruments the code to enable split stream mutation testing
+This is similar to schemata
+
+# you can export the mutants while having the schemata of split stream option enabled
