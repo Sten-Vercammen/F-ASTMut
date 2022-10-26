@@ -1,8 +1,8 @@
 # there are different configurations for the tool, these can be configured by changing the respectable flags inside the main file
-1: export mutants
-2: export reachable mutants
-3: schemata
-4: split stream
+1: EXPORT_MUTANTS
+2: EXPORT_REACHABLE_MUTANTS
+3: SCHEMATA
+4: SPLIT_STREAM
 
 
 # to build the tool, set the desired flags, build it, and rename to your option, e.g. export, the execute your option, ideally using a script
@@ -15,17 +15,17 @@ You can obtain the list of all files as described int the global README example,
 An example is provided in export_miniexample.sh and others 
 
 
-# the export option exports the mutants to a csv file.
-This is used the executed the mutants in a traditional manner, see README of traditional
+# the EXPORT_MUTANTS option exports the mutants to a csv file.
+This is used to executed the mutants in a traditional manner, see README of traditional
 
-# the export reachable mutants instruments to code, to enable the extraction of the reachable mutants
+# the EXPORT_REACHABLE_MUTANTS option extracts the reachable mutants from the project, for this the code base is instrumented 
 See README of reachable
 
-# the schemata option instruments the code to enable mutant schemata
+# the SCHEMATA option instruments the code to enable mutant schemata
 See README of schemata
 
 
-# the split stream option instruments the code to enable split stream mutation testing
+# the SPLIT_STREAM option instruments the code to enable split stream mutation testing
 This is similar to schemata
 
 # you can export the mutants while having the schemata of split stream option enabled
