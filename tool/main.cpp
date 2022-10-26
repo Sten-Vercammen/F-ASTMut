@@ -44,12 +44,13 @@
 static SchemataApiCpp* sac;
 #endif
 #define EXPORT_MUTANTS
-//#define INSERT_MUTANTS
+//#define SCHEMATA
 //#define EXPORT_NON_COMPILING_MUTANTS
 //#define SPLIT_STREAM
 //#define MAXRUNTIME_ST_MS 60000
 //#define MOCK_SPLIT
-//#define INSERT_NON_COMPILING_MUTANTS
+//#define 
+_NON_COMPILING_MUTANTS
 //#define DEBUG_MODE
 //#define EXPORT_REACHABLE_MUTANTS
 
@@ -1624,7 +1625,7 @@ public:
                 }
             }
         }
-#ifdef INSERT_MUTANTS
+#ifdef SCHEMATA
         writeChangedFiles(false);
 #else
         ofstream.flush();
@@ -1703,7 +1704,7 @@ int main(int argc, const char** argv) {
      * in clang's sourcemaneger calling the ComputeLineNumbers function.
      * This is why we need to use temp files.
      */
-#ifdef INSERT_MUTANTS
+#ifdef SCHEMATA
     overWriteChangedFile();
 #endif
     
