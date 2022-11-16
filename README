@@ -3,7 +3,7 @@
 # step 2: build project with export compile commands:
 cd minitest
 mkdir build
-cmake _DCMAKE_EXPORT_COMPIILE_COMMANDS=ON ..
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
 
 #step 3: extract files you want to mutate:
 jq --compact-output ‘[.[] | .file]’ compile_command.json
