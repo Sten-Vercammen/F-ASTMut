@@ -8,7 +8,7 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
 #step 3: extract files you want to mutate:
 jq --compact-output ‘[.[] | .file]’ compile_command.json
 
-#step 3b: if present (useually not), remove test files such as the test/main.cp one
+#step 3b: if present (usually not), remove test files such as the test/main.cp one
 
 #step 4: go to README of TOOL to continue
 
